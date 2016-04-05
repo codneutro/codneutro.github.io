@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>config.constants</strong></li>
+  <li><a href="../modules/io.file.html">io.file</a></li>
+  <li><a href="../modules/match.elo.html">match.elo</a></li>
+  <li><a href="../modules/match.generator.html">match.generator</a></li>
+  <li><a href="../modules/match.match.html">match.match</a></li>
+  <li><a href="../modules/match.match_hook.html">match.match_hook</a></li>
+  <li><a href="../modules/match.match_manager.html">match.match_manager</a></li>
+  <li><a href="../modules/match.match_phases.html">match.match_phases</a></li>
+  <li><a href="../modules/match.match_utils.html">match.match_utils</a></li>
+  <li><a href="../modules/menu.menu.html">menu.menu</a></li>
+  <li><a href="../modules/menu.menu_hook.html">menu.menu_hook</a></li>
+  <li><a href="../modules/misc.settings.html">misc.settings</a></li>
+  <li><a href="../modules/misc.utils.html">misc.utils</a></li>
+  <li><a href="../modules/player.player.html">player.player</a></li>
+  <li><a href="../modules/player.player_hook.html">player.player_hook</a></li>
+  <li><a href="../modules/stats.leaderboard.html">stats.leaderboard</a></li>
+  <li><a href="../modules/stats.leaderboard_hook.html">stats.leaderboard_hook</a></li>
+  <li><a href="../modules/stats.matches.html">stats.matches</a></li>
+  <li><a href="../modules/stats.matches_hook.html">stats.matches_hook</a></li>
+  <li><a href="../modules/ui.gui.html">ui.gui</a></li>
+</ul>
+<h2>Scripts</h2>
+<ul class="nowrap">
+  <li><a href="../scripts/core.lua.html">core.lua</a></li>
+</ul>
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Combination.html">Combination</a></li>
+  <li><a href="../classes/EloPlayer.html">EloPlayer</a></li>
+  <li><a href="../classes/Match.html">Match</a></li>
+  <li><a href="../classes/Button.html">Button</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/Player.html">Player</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>config.constants</code></h1>
+<p>L2D Constants <br>
+ You can play with values here</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Release</strong>: 04/04/16</li>
+        <li><strong>Author</strong>: : x[N]ir</li>
+    </ul>
+
+
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#DEBUG_MODE">DEBUG_MODE</a></td>
+	<td class="summary">Sets it to true to enable debug mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WELCOME_MESSAGE">WELCOME_MESSAGE</a></td>
+	<td class="summary">Your welcome message <br>
+  It MUST have one extra line at the beginning and at the end</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MENU_MAX_FAILS">MENU_MAX_FAILS</a></td>
+	<td class="summary">Maximum attempts before open the menu again</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_QUEUE_LIMIT">MATCH_QUEUE_LIMIT</a></td>
+	<td class="summary">Maximum number of waiting matches in a row</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_LOADED">MATCH_LOADED</a></td>
+	<td class="summary">Number of old matches loaded</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_REMOVE_DELAY">MATCH_REMOVE_DELAY</a></td>
+	<td class="summary">Delay before the preparing match is removed from the queue</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_VOTE_FACTOR">MATCH_VOTE_FACTOR</a></td>
+	<td class="summary">How much players vote needed for a performing an action</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_LEAVE_FACTOR">MATCH_LEAVE_FACTOR</a></td>
+	<td class="summary">Player limit for cancel the match</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_WAITING_PLAYER_DELAY">MATCH_WAITING_PLAYER_DELAY</a></td>
+	<td class="summary">Number of seconds to wait for player to join on map change.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_VOTE_DELAY">MATCH_VOTE_DELAY</a></td>
+	<td class="summary">Number of seconds to wait in order to collect available players ids
+ recommended (20) / test (8)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MATCH_TACTICTIME_DELAY">MATCH_TACTICTIME_DELAY</a></td>
+	<td class="summary">Number of seconds of the tactictime phase
+ recommended (15 - 20) / test (5)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "DEBUG_MODE"></a>
+    <strong>DEBUG_MODE</strong>
+    </dt>
+    <dd>
+    Sets it to true to enable debug mode
+
+
+    <ul>
+        <li><span class="parameter">DEBUG_MODE</span>
+            <span class="types"><span class="type">bool</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WELCOME_MESSAGE"></a>
+    <strong>WELCOME_MESSAGE</strong>
+    </dt>
+    <dd>
+    Your welcome message <br>
+  It MUST have one extra line at the beginning and at the end
+
+
+    <ul>
+        <li><span class="parameter">WELCOME_MESSAGE</span>
+            <span class="types"><a class="type" href="http://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MENU_MAX_FAILS"></a>
+    <strong>MENU_MAX_FAILS</strong>
+    </dt>
+    <dd>
+    Maximum attempts before open the menu again
+
+
+    <ul>
+        <li><span class="parameter">int</span>
+         MENU_MAX_FAILS
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_QUEUE_LIMIT"></a>
+    <strong>MATCH_QUEUE_LIMIT</strong>
+    </dt>
+    <dd>
+    Maximum number of waiting matches in a row
+
+
+    <ul>
+        <li><span class="parameter">MATCH_QUEUE_LIMIT</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_LOADED"></a>
+    <strong>MATCH_LOADED</strong>
+    </dt>
+    <dd>
+    Number of old matches loaded
+
+
+    <ul>
+        <li><span class="parameter">MATCH_LOADED</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_REMOVE_DELAY"></a>
+    <strong>MATCH_REMOVE_DELAY</strong>
+    </dt>
+    <dd>
+    Delay before the preparing match is removed from the queue
+
+
+    <ul>
+        <li><span class="parameter">MATCH_REMOVE_DELAY</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_VOTE_FACTOR"></a>
+    <strong>MATCH_VOTE_FACTOR</strong>
+    </dt>
+    <dd>
+    How much players vote needed for a performing an action
+
+
+    <ul>
+        <li><span class="parameter">MATCH_RESTART_FACTOR</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_LEAVE_FACTOR"></a>
+    <strong>MATCH_LEAVE_FACTOR</strong>
+    </dt>
+    <dd>
+    Player limit for cancel the match
+
+
+    <ul>
+        <li><span class="parameter">MATCH_LEAVE_FACTOR</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_WAITING_PLAYER_DELAY"></a>
+    <strong>MATCH_WAITING_PLAYER_DELAY</strong>
+    </dt>
+    <dd>
+    Number of seconds to wait for player to join on map change.  <br>
+ recommended (15 - 20) / test (2)
+
+
+    <ul>
+        <li><span class="parameter">MATCH_WAITING_PLAYER_DELAY</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_VOTE_DELAY"></a>
+    <strong>MATCH_VOTE_DELAY</strong>
+    </dt>
+    <dd>
+    Number of seconds to wait in order to collect available players ids
+ recommended (20) / test (8)
+
+
+    <ul>
+        <li><span class="parameter">MATCH_VOTE_DELAY</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MATCH_TACTICTIME_DELAY"></a>
+    <strong>MATCH_TACTICTIME_DELAY</strong>
+    </dt>
+    <dd>
+    Number of seconds of the tactictime phase
+ recommended (15 - 20) / test (5)
+
+
+    <ul>
+        <li><span class="parameter">MATCH_TACTICTIME_DELAY</span>
+            <span class="types"><span class="type">int</span></span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2016-04-05 14:32:16 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
